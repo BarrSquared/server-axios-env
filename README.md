@@ -2,6 +2,17 @@
 
 `npm install`
 
+To protect your API keys and database credentials
+
+1. Create  `.env` file
+2. Add a key to that file (e.g. `GIPHY_API_KEY=ABC123`)
+3. Make sure `.env` is in your `.gitignore`!!!
+4. `npm install dotenv`
+5. `require('dotenv').config()` at the top of `server.js`
+6. Your variable is now accessible via `process.env.GIPHY_API_KEY`
+
+`console.log(process.env.GIPHY_API_KEY)` would be `ABC123`
+
 This is the starting repo to accompany 06-02b_server-axios-env.md
 
 This is a 3/4 stack app (no DB), although the pool file is in the repo.
